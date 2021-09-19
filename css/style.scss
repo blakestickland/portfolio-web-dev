@@ -5,6 +5,7 @@
 @use "./modules/projects.scss";
 
 @use "./partials/palette";
+@use "./partials/typography";
 
 * {
   margin: 0;
@@ -15,6 +16,11 @@ body {
   background-color: palette.$hero-bg-color;
 }
 
-h1 {
-  text-align: center;
+span {
+  color: palette.$standout-font-color;
+  font-family: typography.$secondary-font-family;
+}
+
+a {
+  color: palette.$secondary-font-color;
 }

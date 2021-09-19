@@ -9,13 +9,12 @@
   justify-content: space-between;
   height: 40px;
   width: 100%;
-  background-color: palette.$navbar-bg-color;
   font-family: typography.$secondary-font-family;
-  font-size: typography.$secondary-font-size;
+  font-size: typography.$standard-font-size;
   font-weight: typography.$bold-weight;
 
   @include devices.phone {
-    font-size: typography.$tertiary-font-size;
+    font-size: typography.$phone-font-size;
     height: 30px;
   }
 
@@ -26,10 +25,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgb(148, 151, 153);
 
     &--left {
-      background-color: yellowgreen;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -38,14 +35,12 @@
     
     
     &--right {
-      background-color: aqua;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
 
       &__list {
-        color: yellowgreen;
         list-style-type: none;
         display: flex;
         flex-direction: row;
@@ -55,13 +50,12 @@
     }
   }
   &__nav-item {
-  background-color: yellow;
   // padding: spacing.$nav-item-padding;
   margin-right:20px;
   width: fit-content;
 
   > span {
-    background-color: yellowgreen;
+    color: palette.$standout-font-color;
     margin-right: 10px;
   }
 }

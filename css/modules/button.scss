@@ -1,16 +1,18 @@
 @use "../partials/typography";
+@use "../partials/palette";
 
 .btn {
-  background-color: palegreen;
+  background-color: palette.$hero-bg-color;
+  color: palette.$standout-font-color;
   padding: 10px;
-  border: 2px solid black;
+  border: 2px solid palette.$standout-font-color;
   border-radius: 3px;
 
-  font-size: typography.$secondary-font-size;
+  font-size: typography.$tertiary-font-size;
   font-family: typography.$primary-font-family;
 
   &--medium {
-    padding: 20px;
+    padding: 15px 30px;
   }
 
   &--large {
