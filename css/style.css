@@ -83,6 +83,110 @@ a:focus {
   background: #BAE498;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-center {
+  width: 84%;
+}
+
+.sidebar-left {
+  background-color: salmon;
+  width: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sidebar-right {
+  background-color: palegoldenrod;
+  width: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn {
+  background-color: palegreen;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 3px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn--medium {
+  padding: 20px;
+}
+.btn--large {
+  padding: 30px;
+}
+
+.project-gallery > .card {
+  background-color: peru;
+  height: 250px;
+  width: 100%;
+  min-height: fit-content;
+  border: 2px solid black;
+  justify-self: center;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 30px;
+  width: 84%;
+}
+@media only screen and (max-width: 576px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+  .project-gallery .card {
+    width: 80vw;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .project-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-gallery .card {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .project-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-gallery .card {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+  .project-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .project-gallery .card {
+    width: 27vw;
+  }
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: pink;
+  width: 84%;
+}
+
 * {
   margin: 0;
   padding: 0;

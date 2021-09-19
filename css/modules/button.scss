@@ -1,0 +1,19 @@
+@use "../partials/typography";
+
+.btn {
+  background-color: palegreen;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 3px;
+
+  font-size: typography.$secondary-font-size;
+  font-family: typography.$primary-font-family;
+
+  &--medium {
+    padding: 20px;
+  }
+
+  &--large {
+    padding: 30px;
+  }
+}
