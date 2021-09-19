@@ -1,0 +1,63 @@
+@use "../partials/palette";
+@use "../partials/typography";
+@use "../partials/spacing";
+@use "../partials/devices";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+  font-family: typography.$secondary-font-family;
+  font-size: typography.$standard-font-size;
+  font-weight: typography.$bold-weight;
+
+  @include devices.phone {
+    font-size: typography.$phone-font-size;
+    height: 30px;
+  }
+
+  &__nav-contents {
+    height: 100%;
+    width: 50%;
+    margin: spacing.$nav-contents-margin;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &--left {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    
+    &--right {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+
+      &__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    }
+  }
+  &__nav-item {
+  // padding: spacing.$nav-item-padding;
+  margin-right:20px;
+  width: fit-content;
+
+  > span {
+    color: palette.$standout-font-color;
+    margin-right: 10px;
+  }
+}
+  
+}
