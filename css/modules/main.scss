@@ -4,18 +4,56 @@
 @use "../partials/devices";
 
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // align-items: center;
+  
+  width: 100%;
+
+  font-family: typography.$primary-font-family;
+  color: palette.$primary-font-color;
+  // background-color: green;
+
+  @include devices.phone {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.main-container {
+  width:100%;
+  max-width: 926px;
+
+  padding: 0 25px;
+  
+  @include devices.phone {
+    // background-color: lightseagreen;
+    // width: 100vw;
+  }
+}
+
 .section {
   height: fit-content;
-  padding: 3rem;
+  width: 100%;
+
+  padding: 20px 0;
+
+  // h1, h2, p, button, ul {
+  //   margin: 2rem;
+  // }
+
+  @include devices.phone {
+    // padding: 1rem;
+    // width: 100%;
+  }
 
   &__landing-page {
     min-height: 100vh;
     max-height: fit-content;
 
-
-    h1, h2, p, button {
-      margin-top: 2rem;
-    }
 
     h1 {
       font-size: typography.$primary-font-size;
@@ -27,53 +65,54 @@
     p {
       line-height: 1.5rem;
     }
+
+    @include devices.phone {
+      // grid-template-columns: 1fr;
+      h1 {
+        font-size: (typography.$primary-font-size * 0.8);
+      }
+      h2 {
+        font-size: (typography.$secondary-font-size * 0.8);
+      }
+      p {
+        line-height: 1.2rem;
+      }
+    }
   }
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-
-  font-family: typography.$primary-font-family;
-  color: palette.$primary-font-color;
-}
-
-.container-center {
-  width:84%;
-}
-
-.sidebar-left {
+.sidebar {
   width: 100px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content:flex-end;
+
+  // background-color: lightgreen;
+
 
   position: -webkit-sticky;
   position: sticky;
   top:0;
-}
-
-.sidebar-right {
-  width: 100px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:flex-end;
   
-  position: -webkit-sticky;
-  position: sticky;
-  top:0;
+  &-right {
+    background-color: palette.$hero-bg-color;
+    color: palette.$primary-font-color;
+    font-family: typography.$secondary-font-family;
+  
+    &--rotateCW90 {
+      transform: rotate(90);
+    }
+  }
 
-  background-color: palette.$hero-bg-color;
-  color: palette.$primary-font-color;
-  font-family: typography.$secondary-font-family;
-
-  &--rotateCW90 {
-    transform: rotate(90);
+  @include devices.phone {
+    // grid-template-columns: 1fr;
+    display: none;
+    
+  }
+  
+  @include devices.tablet {
+    // grid-template-columns: repeat(2, 1fr);
   }
 }
