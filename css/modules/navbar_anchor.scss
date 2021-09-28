@@ -5,15 +5,16 @@
 
 a {
   text-decoration: none;
+  color: palette.$secondary-font-color;
 }
 a:hover {
   cursor: pointer;
-  border-top: 2px dashed black;
-  border-bottom: 2px dashed black;
+  border-top: 2px dashed palette.$standout-font-color;
+  border-bottom: 2px dashed palette.$standout-font-color;
 }
 a:active {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid palette.$standout-font-color;
+  border-bottom: 2px solid palette.$standout-font-color;
 }
 a:visited {
   color: palette.$primary-font-color;

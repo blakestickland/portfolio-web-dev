@@ -24,15 +24,15 @@
     </nav>
   </header>
   <main class="container">
-    <div class="sidebar-left">
+    <div class="sidebar">
       sidebar-left
     </div>
 
-    <div class="container-center">
+    <div class="main-container">
       <section class="section section__landing-page" id="landing-page">
         <p><span>Hi there, I'm</span></p>
         <h1>Blake Stickland</h1>
-        <h2>I love to creating things for the web with code.</h2>
+        <h2>I create things for the web with code.</h2>
         <p>I'm a full-stack web developer with a passion for exceptional digital experiences. I am presently building my skills as part of the <span>_nology</span> Tech Consultancy program.</p>
         <button class="btn btn--medium">
           <a href="https://au.nology.io/">Explore _nology!</a>
@@ -73,129 +73,208 @@
         </ul>
         
       </section>
-      <section class="section section__projects" id="projects">
-          <span><h2>03. Projects</h2></span>
-        <!-- Use a grid to display the projects with one project per card -->
-        <div class="project-gallery">
-          <div class="card">
-            <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
-            <h4>Project Title</h4>
-            <p>Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="tech-stack-text">
-              <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>NodeJS</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
-            <h4>Project Title</h4>
-            <p>Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="tech-stack-text">
-              <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>NodeJS</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
-            <h4>Project Title</h4>
-            <p>Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="tech-stack-text">
-              <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>NodeJS</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
-            <h4>Project Title</h4>
-            <p>Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="tech-stack-text">
-              <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>NodeJS</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
-            <h4>Project Title</h4>
-            <p>Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="tech-stack-text">
-              <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>NodeJS</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
-            <h4>Project Title</h4>
-            <p>Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="tech-stack-text">
-              <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>NodeJS</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    
-      </section>
-      <section class="section section__contact" id="contact">
-        <h3><span>04. Contact</span></h3>
-        <h2>Get In Touch</h2>
-        <!-- Use a form to be able to send emails from within the page. -->
-        <!-- Be sure to use form validation. -->
-        <form class="form" action="https://formspree.io/f/mnqllryw" method="POST">
-    
-          <label for="full-name">Full Name:</label>
-          <input type="text" name="full-name" id="full-name" placeholder="Full name" required />
-    
-          <br />
-    
-    
-          <label class="form__label" for="email">Email:</label>
-          <input class="form__input" type="email" name="email" placeholder="email address" required />
-    
-          <br />
-                
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" cols="30" rows="2" placeholder="Please type your message here." required></textarea>
-    
-          <br />
-    
-          <input type="submit" name="" id="" />
-    
-          <!-- <button class="button">Submit</button> -->
-          <!-- <button class="button button--secondary">Clear</button> -->
-        </form>
-    
-      </section>
-      <section></section>
-    </div>
 
-    <div class="sidebar-right">
-      <div class="sidebar-right--rotateCW90">
-        Email: blakestickland@gmail.com
+      <!-- section -->
+      <section class="section section__projects" id="projects">
+        <!-- h2 section heading -->
+        <span><h2>03. Projects</h2></span>
+        <!-- ul of projects -->
+        <ul class="project-gallery">
+          <!-- li for each project -->
+          <li class="project-content">
+              <!-- p -- recent project  -->
+              <span><p>Recent project</p></span>
+              <!-- h3 project-title -->
+              <h4 class="project-content__heading">Project Title</h4>
+              <!-- div project description -->
+              <p class="project-content__description">Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <!-- ul project tech list -->
+              <ul class="project-content__tech-stack-list">
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">MongoDB</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">Express</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">React</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">NodeJS</li>
+                <li class="project-content__tech-stack-list__item">Heroku</li>
+              </ul>
+              <!-- project links; one for deployed site; one for github repo -->
+              <div class="project-links">
+                <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
+              </div>
+              <!-- project image as background -->
+            </li>
+          <!-- li for each project -->
+          <li class="project-content">
+              <!-- p -- recent project  -->
+              <span><p>Recent project</p></span>
+              <!-- h3 project-title -->
+              <h4 class="project-content__heading">Project Title</h4>
+              <!-- div project description -->
+              <p class="project-content__description">Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <!-- ul project tech list -->
+              <ul class="project-content__tech-stack-list">
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">MongoDB</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">Express</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">React</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">NodeJS</li>
+                <li class="project-content__tech-stack-list__item">Heroku</li>
+              </ul>
+              <!-- project links; one for deployed site; one for github repo -->
+              <div class="project-links">
+                <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
+              </div>
+              <!-- project image as background -->
+            </li>
+          <!-- li for each project -->
+          <li class="project-content">
+              <!-- p -- recent project  -->
+              <span><p>Recent project</p></span>
+              <!-- h3 project-title -->
+              <h4 class="project-content__heading">Project Title</h4>
+              <!-- div project description -->
+              <p class="project-content__description">Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <!-- ul project tech list -->
+              <ul class="project-content__tech-stack-list">
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">MongoDB</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">Express</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">React</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">NodeJS</li>
+                <li class="project-content__tech-stack-list__item">Heroku</li>
+              </ul>
+              <!-- project links; one for deployed site; one for github repo -->
+              <div class="project-links">
+                <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
+              </div>
+              <!-- project image as background -->
+            </li>
+          <!-- li for each project -->
+          <li class="project-content">
+              <!-- p -- recent project  -->
+              <span><p>Recent project</p></span>
+              <!-- h3 project-title -->
+              <h4 class="project-content__heading">Project Title</h4>
+              <!-- div project description -->
+              <p class="project-content__description">Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <!-- ul project tech list -->
+              <ul class="project-content__tech-stack-list">
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">MongoDB</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">Express</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">React</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">NodeJS</li>
+                <li class="project-content__tech-stack-list__item">Heroku</li>
+              </ul>
+              <!-- project links; one for deployed site; one for github repo -->
+              <div class="project-links">
+                <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
+              </div>
+              <!-- project image as background -->
+            </li>
+          <!-- li for each project -->
+          <li class="project-content">
+              <!-- p -- recent project  -->
+              <span><p>Recent project</p></span>
+              <!-- h3 project-title -->
+              <h4 class="project-content__heading">Project Title</h4>
+              <!-- div project description -->
+              <p class="project-content__description">Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <!-- ul project tech list -->
+              <ul class="project-content__tech-stack-list">
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">MongoDB</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">Express</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">React</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">NodeJS</li>
+                <li class="project-content__tech-stack-list__item">Heroku</li>
+              </ul>
+              <!-- project links; one for deployed site; one for github repo -->
+              <div class="project-links">
+                <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
+              </div>
+              <!-- project image as background -->
+            </li>
+          <!-- li for each project -->
+          <li class="project-content">
+              <!-- p -- recent project  -->
+              <span><p>Recent project</p></span>
+              <!-- h3 project-title -->
+              <h4 class="project-content__heading">Project Title</h4>
+              <!-- div project description -->
+              <p class="project-content__description">Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <!-- ul project tech list -->
+              <ul class="project-content__tech-stack-list">
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">MongoDB</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">Express</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">React</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">NodeJS</li>
+                <li class="project-content__tech-stack-list__item">Heroku</li>
+              </ul>
+              <!-- project links; one for deployed site; one for github repo -->
+              <div class="project-links">
+                <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
+              </div>
+              <!-- project image as background -->
+            </li>
+
+          </ul>
+        </section>
+        <section class="section section__contact" id="contact">
+          <h3><span>04. Contact</span></h3>
+          <h2>Get In Touch</h2>
+          <!-- Use a form to be able to send emails from within the page. -->
+          <!-- Be sure to use form validation. -->
+          <form class="form" action="https://formspree.io/f/mnqllryw" method="POST">
+      
+            <label for="full-name">Full Name:</label>
+            <input type="text" name="full-name" id="full-name" placeholder="Full name" required />
+      
+            <br />
+      
+      
+            <label class="form__label" for="email">Email:</label>
+            <input class="form__input" type="email" name="email" placeholder="email address" required />
+      
+            <br />
+                  
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="2" placeholder="Please type your message here." required></textarea>
+      
+            <br />
+      
+            <input type="submit" name="" id="" />
+      
+            <!-- <button class="button">Submit</button> -->
+            <!-- <button class="button button--secondary">Clear</button> -->
+          </form>
+      
+        </section>
       </div>
-    </div>
+
+      <div class="sidebar sidebar-right">
+        <div class="sidebar-right sidebar-right--rotateCW90">
+          <!-- Email: blakestickland@gmail.com -->
+      </div>
   </main>
 </body>
 </html>

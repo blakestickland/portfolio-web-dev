@@ -10,12 +10,16 @@
   height: 40px;
   width: 100%;
   font-family: typography.$secondary-font-family;
-  font-size: typography.$standard-font-size;
+  // font-size: typography.$standard-font-size;
   font-weight: typography.$bold-weight;
 
   @include devices.phone {
     font-size: typography.$phone-font-size;
     height: 30px;
+  }
+  @include devices.tablet {
+    font-size: typography.$standard-font-size * 0.8;
+    height: 35px;
   }
 
   &__nav-contents {
@@ -56,7 +60,7 @@
 
   > span {
     color: palette.$standout-font-color;
-    margin-right: 10px;
+    // margin-right: 10px;
   }
 }
   
