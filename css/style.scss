@@ -1,7 +1,26 @@
-body {
-  background-color: hotpink;
+@use "./modules/navbar.scss";
+@use "./modules/navbar_anchor.scss";
+@use "./modules/main.scss";
+@use "./modules/button.scss";
+@use "./modules/projects.scss";
+
+@use "./partials/palette";
+@use "./partials/typography";
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  text-align: center;
+body {
+  background-color: palette.$hero-bg-color;
+}
+
+span {
+  color: palette.$standout-font-color;
+  font-family: typography.$secondary-font-family;
+}
+
+a {
+  color: palette.$secondary-font-color;
 }

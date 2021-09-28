@@ -1,7 +1,234 @@
-body {
-  background-color: hotpink;
+/* Hero Color */
+/* Text Color */
+/* Spare Color */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 576px) {
+  .navbar {
+    font-size: 12px;
+    height: 30px;
+  }
+}
+.navbar__nav-contents {
+  height: 100%;
+  width: 50%;
+  margin: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar__nav-contents--left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navbar__nav-contents--right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar__nav-contents--right__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar__nav-item {
+  margin-right: 20px;
+  width: fit-content;
+}
+.navbar__nav-item > span {
+  color: #FFEE32;
+  margin-right: 10px;
 }
 
-h1 {
-  text-align: center;
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  border-top: 2px dashed black;
+  border-bottom: 2px dashed black;
+}
+
+a:active {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+a:visited {
+  color: #D6D6D6;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #BAE498;
+}
+
+.section {
+  height: fit-content;
+  padding: 3rem;
+}
+.section__landing-page {
+  min-height: 100vh;
+  max-height: fit-content;
+}
+.section__landing-page h1, .section__landing-page h2, .section__landing-page p, .section__landing-page button {
+  margin-top: 2rem;
+}
+.section__landing-page h1 {
+  font-size: 54px;
+}
+.section__landing-page h2 {
+  font-size: 42px;
+  color: #c4c2c2;
+}
+.section__landing-page p {
+  line-height: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #D6D6D6;
+}
+
+.container-center {
+  width: 84%;
+}
+
+.sidebar-left {
+  width: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar-right {
+  width: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #202020;
+  color: #D6D6D6;
+  font-family: "Courier New", Courier, monospace;
+}
+.sidebar-right--rotateCW90 {
+  transform: rotate(90);
+}
+
+.btn {
+  background-color: #202020;
+  color: #FFEE32;
+  padding: 10px;
+  border: 2px solid #FFEE32;
+  border-radius: 3px;
+  font-size: 24px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.btn--medium {
+  padding: 15px 30px;
+}
+.btn--large {
+  padding: 30px;
+}
+
+.project-gallery > .card {
+  background-color: peru;
+  height: 250px;
+  width: 100%;
+  min-height: fit-content;
+  border: 2px solid black;
+  justify-self: center;
+}
+
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 30px;
+  width: 84%;
+}
+@media only screen and (max-width: 576px) {
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+  .project-gallery .card {
+    width: 80vw;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .project-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-gallery .card {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .project-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-gallery .card {
+    width: 40vw;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+  .project-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .project-gallery .card {
+    width: 27vw;
+  }
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: pink;
+  width: 84%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #202020;
+}
+
+span {
+  color: #FFEE32;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a {
+  color: #c4c2c2;
 }
