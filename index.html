@@ -29,6 +29,7 @@
     </div>
 
     <div class="main-container">
+
       <section class="section section__landing-page" id="landing-page">
         <p><span>Hi there, I'm</span></p>
         <h1>Blake Stickland</h1>
@@ -38,18 +39,28 @@
           <a href="https://au.nology.io/">Explore _nology!</a>
         </button>
       </section>
-      <section class="section section__about" id="about">
-        <h2><span>01. About Me</span></h2>
-        <p>
-          Full-Stack Web Developer with a desire to utilise my professional experience, background, and new web development skills as a Multimedia Programmer in the Arts. Recently earned a certificate for Full-Stack Web Development from Monash University with skills in JavaScript, HTML, CSS and Node.js.
-    
-          My passion for music led me to develop a strong background in delivering technical skills and problem-solving as part of a team in a high-pressure live event environment as a Sound Engineer. These abilities combine well with the education to deliver exceptional client-focussed results.
-    
-          Engaging the end-user with a balance of clear, focussed design and well implemented data are my aims for each project. I worked as a team of four to deliver a recipe search solution that provides ten recipe and three wine pairing suggestions based on any user-entered ingredient or taste keywords. I am excited to apply my skills as part of a dynamic, quality-driven team to create exceptional sites on the web.
-        </p>
+
+      <section class="section section__about" id="about"> <!-- section -->
+        <h3><span>01. About Me</span></h3>
+        <div class="section__about-content"> <!-- about__content -->
+          <div class="section__about-content--left">
+            <p>
+              Full-Stack Web Developer with a desire to utilise my professional experience, background, and new web development skills as a Multimedia Programmer in the Arts. Recently earned a certificate for Full-Stack Web Development from Monash University with skills in JavaScript, HTML, CSS and Node.js.
+              <br />
+              <br />
+              My passion for music led me to develop a strong background in delivering technical skills and problem-solving as part of a team in a high-pressure live event environment as a Sound Engineer. These abilities combine well with the education to deliver exceptional client-focussed results.
+              <br />
+              <br />
+              Engaging the end-user with a balance of clear, focussed design and well implemented data are my aims for each project. I worked as a team of four to deliver a recipe search solution that provides ten recipe and three wine pairing suggestions based on any user-entered ingredient or taste keywords. I am excited to apply my skills as part of a dynamic, quality-driven team to create exceptional sites on the web.
+            </p>
+          </div>
+          <div class="section__about-content--right">
+            <img src="./images/blake-stickland-portfolio-headshot.jpg" alt="headshot of Blake Stickland">
+          </div>
+        </div>
       </section>
       <section class="section section__tech-stack" id="tech_stack">
-        <h2><span>02. Tech_Stack</span></h2>
+        <h3><span>02. Tech_Stack</span></h3>
         <p>Some of the technologies I have worked with:</p>
         <ul>
           <li>HTML</li>
@@ -77,7 +88,7 @@
       <!-- section -->
       <section class="section section__projects" id="projects">
         <!-- h2 section heading -->
-        <span><h2>03. Projects</h2></span>
+        <span><h3>03. Projects</h3></span>
         <!-- ul of projects -->
         <ul class="project-gallery">
           <!-- li for each project -->
@@ -241,7 +252,7 @@
         </section>
         <section class="section section__contact" id="contact">
           <h3><span>04. Contact</span></h3>
-          <h2>Get In Touch</h2>
+          <h2>Get In Touch!</h2>
           <!-- Use a form to be able to send emails from within the page. -->
           <!-- Be sure to use form validation. -->
           <form class="form" action="https://formspree.io/f/mnqllryw" method="POST">
@@ -272,8 +283,8 @@
       </div>
 
       <div class="sidebar sidebar-right">
-        <div class="sidebar-right sidebar-right--rotateCW90">
-          <!-- Email: blakestickland@gmail.com -->
+        <div class="sidebar__email">
+          Email: blakestickland@gmail.com
       </div>
   </main>
 </body>

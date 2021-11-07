@@ -41,6 +41,14 @@
 
   padding: 20px 0;
 
+  h3 {
+    padding: spacing.$section-heading-padding;
+  }
+
+  p {
+      line-height: 1.5rem;
+    }
+
   // h1, h2, p, button, ul {
   //   margin: 2rem;
   // }
@@ -62,9 +70,7 @@
       font-size: typography.$secondary-font-size;
       color: palette.$secondary-font-color;
     }
-    p {
-      line-height: 1.5rem;
-    }
+  
 
     @include devices.phone {
       // grid-template-columns: 1fr;
@@ -77,6 +83,37 @@
       p {
         line-height: 1.2rem;
       }
+    }
+  }
+
+  &__about-content {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      width: 70%;
+      margin: 0 30px;
+      filter: sepia();
+      border-radius: 3px;
+
+      outline: 1px solid palette.$primary-font-color;
+      outline-offset: 7px;
+
+      //position: relative;
+      //z-index: -1;
+    }
+    
+    &--left {
+      width: 50%;
+      @include devices.phone {
+        width: 100%;
+      }
+    }
+    &--right {
+      width: 50%;
+    }
+    @include devices.phone {
+      width: 100%;
     }
   }
 }
@@ -96,14 +133,13 @@
   position: sticky;
   top:0;
   
-  &-right {
+  &-right { // use double dash here!!!!!!!
     background-color: palette.$hero-bg-color;
     color: palette.$primary-font-color;
     font-family: typography.$secondary-font-family;
-  
-    &--rotateCW90 {
-      transform: rotate(90);
-    }
+    
+    writing-mode: vertical-rl;
+    justify-content: center;
   }
 
   @include devices.phone {
