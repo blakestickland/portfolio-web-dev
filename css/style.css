@@ -164,6 +164,25 @@ a:focus {
     width: 100%;
   }
 }
+.section__contact h3 {
+  padding: 0 0 15px 0;
+}
+.section__contact h2, .section__contact p {
+  padding: 0 0 10px 0;
+}
+.section__contact__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section__contact__content__email-link {
+  background-color: #222;
+  color: #eee;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  padding: 10px;
+  width: fit-content;
+}
 
 .sidebar {
   width: 100px;
@@ -190,10 +209,12 @@ a:focus {
 }
 .footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 40px;
   width: 100%;
+  line-height: 2rem;
   color: #D6D6D6;
   font-family: "Courier New", Courier, monospace;
   font-size: 16px;
@@ -210,21 +231,6 @@ a:focus {
     font-size: 12.8px;
     height: 35px;
   }
-}
-.footer--left {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-.footer--right {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-.footer--right > span {
-  color: #FFEE32;
 }
 
 .btn {
