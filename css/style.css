@@ -108,6 +108,12 @@ a:focus {
   width: 100%;
   padding: 20px 0;
 }
+.section h3 {
+  padding: 30px 0;
+}
+.section p {
+  line-height: 1.5rem;
+}
 .section__landing-page {
   min-height: 100vh;
   max-height: fit-content;
@@ -119,9 +125,6 @@ a:focus {
   font-size: 42px;
   color: #c4c2c2;
 }
-.section__landing-page p {
-  line-height: 1.5rem;
-}
 @media only screen and (max-width: 576px) {
   .section__landing-page h1 {
     font-size: 43.2px;
@@ -131,6 +134,34 @@ a:focus {
   }
   .section__landing-page p {
     line-height: 1.2rem;
+  }
+}
+.section__about-content {
+  display: flex;
+  flex-direction: row;
+}
+.section__about-content img {
+  width: 70%;
+  margin: 0 30px;
+  filter: sepia();
+  border-radius: 3px;
+  outline: 1px solid #D6D6D6;
+  outline-offset: 7px;
+}
+.section__about-content--left {
+  width: 50%;
+}
+@media only screen and (max-width: 576px) {
+  .section__about-content--left {
+    width: 100%;
+  }
+}
+.section__about-content--right {
+  width: 50%;
+}
+@media only screen and (max-width: 576px) {
+  .section__about-content {
+    width: 100%;
   }
 }
 
@@ -149,9 +180,8 @@ a:focus {
   background-color: #202020;
   color: #D6D6D6;
   font-family: "Courier New", Courier, monospace;
-}
-.sidebar-right--rotateCW90 {
-  transform: rotate(90);
+  writing-mode: vertical-rl;
+  justify-content: center;
 }
 @media only screen and (max-width: 576px) {
   .sidebar {
