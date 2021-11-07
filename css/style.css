@@ -188,6 +188,45 @@ a:focus {
     display: none;
   }
 }
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  color: #D6D6D6;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  padding: 30px 10px;
+}
+@media only screen and (max-width: 576px) {
+  .footer {
+    font-size: 12px;
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  .footer {
+    font-size: 12.8px;
+    height: 35px;
+  }
+}
+.footer--left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer--right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer--right > span {
+  color: #FFEE32;
+}
+
 .btn {
   background-color: #202020;
   color: #FFEE32;
