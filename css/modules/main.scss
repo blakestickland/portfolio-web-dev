@@ -159,7 +159,22 @@
   position: sticky;
   top:0;
   
-  &-right { // use double dash here!!!!!!!
+  &--left { 
+    display: flex;
+    flex-direction: column;
+    background-color: palette.$hero-bg-color;
+    color: palette.$primary-font-color;
+    font-family: typography.$secondary-font-family;
+    
+    // writing-mode: vertical-lr;
+    justify-content: center;
+    align-items: center;
+    
+    &__icon {
+      padding: 10px 0;
+    }
+  }
+  &--right { 
     background-color: palette.$hero-bg-color;
     color: palette.$primary-font-color;
     font-family: typography.$secondary-font-family;
