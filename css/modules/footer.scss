@@ -8,6 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  // margin: auto;
   height: 40px;
   width: 100%;
   line-height: 2rem;
@@ -24,5 +25,13 @@
   @include devices.tablet {
     font-size: typography.$standard-font-size * 0.8;
     height: 35px;
-  }  
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    i {
+      padding: 10px 20px;
+    }
+  }
 }

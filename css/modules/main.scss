@@ -8,13 +8,11 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  // align-items: center;
   
   width: 100%;
 
   font-family: typography.$primary-font-family;
   color: palette.$primary-font-color;
-  // background-color: green;
 
   @include devices.phone {
     margin: 0;
@@ -30,7 +28,6 @@
   padding: 0 25px;
   
   @include devices.phone {
-    // background-color: lightseagreen;
     // width: 100vw;
   }
 }
@@ -117,6 +114,18 @@
     }
   }
 
+  &__tech-stack ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    
+    li {
+      padding: 15px 30px;
+      text-align: center;
+    }
+  }
+
   &__contact{
     h3 {
       padding: 0 0 15px 0;
@@ -152,9 +161,6 @@
   align-items: center;
   justify-content:flex-end;
 
-  // background-color: lightgreen;
-
-
   position: -webkit-sticky;
   position: sticky;
   top:0;
@@ -166,12 +172,16 @@
     color: palette.$primary-font-color;
     font-family: typography.$secondary-font-family;
     
-    // writing-mode: vertical-lr;
-    justify-content: center;
-    align-items: center;
-    
     &__icon {
-      padding: 10px 0;
+      padding: 15px 0;
+    }
+    a:last-of-type::after{
+      content:"";
+      display: block;
+      width: 1px;
+      height: 260px;
+      margin: 0px auto;
+      background-color: yellow;
     }
   }
   &--right { 
@@ -179,8 +189,26 @@
     color: palette.$primary-font-color;
     font-family: typography.$secondary-font-family;
     
-    writing-mode: vertical-rl;
-    justify-content: center;
+    align-items: center;
+
+    p {
+      writing-mode: vertical-rl;
+      padding: 25px 10px;
+    }
+    p:hover {
+      cursor: pointer;
+      border-left: 2px dashed palette.$standout-font-color;
+      border-right: 2px dashed palette.$standout-font-color;
+    }
+    
+    a:last-of-type::after{
+    content:"";
+    display: block;
+    width: 1px;
+    height: 140px;
+    margin: 0px auto;
+    background-color: yellow;
+    }
   }
 
   @include devices.phone {

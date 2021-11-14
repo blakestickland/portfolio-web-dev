@@ -164,6 +164,16 @@ a:focus {
     width: 100%;
   }
 }
+.section__tech-stack ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.section__tech-stack ul li {
+  padding: 15px 30px;
+  text-align: center;
+}
 .section__contact h3 {
   padding: 0 0 15px 0;
 }
@@ -201,18 +211,40 @@ a:focus {
   background-color: #202020;
   color: #D6D6D6;
   font-family: "Courier New", Courier, monospace;
-  justify-content: center;
-  align-items: center;
 }
 .sidebar--left__icon {
-  padding: 10px 0;
+  padding: 15px 0;
+}
+.sidebar--left a:last-of-type::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 260px;
+  margin: 0px auto;
+  background-color: yellow;
 }
 .sidebar--right {
   background-color: #202020;
   color: #D6D6D6;
   font-family: "Courier New", Courier, monospace;
+  align-items: center;
+}
+.sidebar--right p {
   writing-mode: vertical-rl;
-  justify-content: center;
+  padding: 25px 10px;
+}
+.sidebar--right p:hover {
+  cursor: pointer;
+  border-left: 2px dashed #FFEE32;
+  border-right: 2px dashed #FFEE32;
+}
+.sidebar--right a:last-of-type::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 140px;
+  margin: 0px auto;
+  background-color: yellow;
 }
 @media only screen and (max-width: 576px) {
   .sidebar {
@@ -243,6 +275,13 @@ a:focus {
     font-size: 12.8px;
     height: 35px;
   }
+}
+.footer__icons {
+  display: flex;
+  justify-content: center;
+}
+.footer__icons i {
+  padding: 10px 20px;
 }
 
 .btn {
@@ -338,10 +377,10 @@ a:focus {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-  box-sizing: border-box;
   width: 100%;
   text-size-adjust: 100%;
 }
