@@ -55,10 +55,18 @@
     // width: 100%;
   }
 
-  &__landing-page {
-    min-height: 100vh;
-    max-height: fit-content;
+  &__topDivPush {
+      height: 10vh;
+      width: 100%;
+  }
 
+  &__landing-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-height: fit-content;    
+
+    p { padding: 3rem 0;}
 
     h1 {
       font-size: typography.$primary-font-size;
@@ -66,6 +74,10 @@
     h2 {
       font-size: typography.$secondary-font-size;
       color: palette.$secondary-font-color;
+    }
+
+    button {
+      max-width: fit-content;
     }
   
 

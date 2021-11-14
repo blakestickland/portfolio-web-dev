@@ -114,9 +114,18 @@ a:focus {
 .section p {
   line-height: 1.5rem;
 }
+.section__topDivPush {
+  height: 10vh;
+  width: 100%;
+}
 .section__landing-page {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   max-height: fit-content;
+}
+.section__landing-page p {
+  padding: 3rem 0;
 }
 .section__landing-page h1 {
   font-size: 54px;
@@ -124,6 +133,9 @@ a:focus {
 .section__landing-page h2 {
   font-size: 42px;
   color: #c4c2c2;
+}
+.section__landing-page button {
+  max-width: fit-content;
 }
 @media only screen and (max-width: 576px) {
   .section__landing-page h1 {
