@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Blake Stickland - Web Developer</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.15.4/css/all.css">
 </head>
 <body>
   <header>
@@ -24,178 +25,279 @@
     </nav>
   </header>
   <main class="container">
-    <div class="sidebar-left">
-      sidebar-left
+    <div class="sidebar sidebar--left">
+      <a href="https://linkedin.com/in/blake-stickland" target="_blank">
+        <i class="fab fa-linkedin fa-2x sidebar--left__icon" style="color:#DDDDDD;"></i>
+      </a>
+      <a href="https://github.com/blakestickland" target="_blank">
+        <i class="fab fa-github-square fa-2x sidebar--left__icon" style="color:#DDDDDD;"></i>
+      </a>
+      <a href="mailto:blakestickland@gmail.com" rel="noopener noreferrer" target="_blank">
+        <i class="fa fa-envelope fa-2x sidebar--left__icon" style="color:#DDDDDD;"></i>
+      </a>
     </div>
+    
 
-    <div class="container-center">
+    <div class="main-container">
+
       <section class="section section__landing-page" id="landing-page">
+        <div class="section__topDivPush"></div>
         <p><span>Hi there, I'm</span></p>
         <h1>Blake Stickland</h1>
-        <h2>I love to creating things for the web with code.</h2>
+        <h2>I create things for the web with code.</h2>
         <p>I'm a full-stack web developer with a passion for exceptional digital experiences. I am presently building my skills as part of the <span>_nology</span> Tech Consultancy program.</p>
         <button class="btn btn--medium">
           <a href="https://au.nology.io/">Explore _nology!</a>
         </button>
       </section>
-      <section class="section section__about" id="about">
-        <h2><span>01. About Me</span></h2>
-        <p>
-          Full-Stack Web Developer with a desire to utilise my professional experience, background, and new web development skills as a Multimedia Programmer in the Arts. Recently earned a certificate for Full-Stack Web Development from Monash University with skills in JavaScript, HTML, CSS and Node.js.
-    
-          My passion for music led me to develop a strong background in delivering technical skills and problem-solving as part of a team in a high-pressure live event environment as a Sound Engineer. These abilities combine well with the education to deliver exceptional client-focussed results.
-    
-          Engaging the end-user with a balance of clear, focussed design and well implemented data are my aims for each project. I worked as a team of four to deliver a recipe search solution that provides ten recipe and three wine pairing suggestions based on any user-entered ingredient or taste keywords. I am excited to apply my skills as part of a dynamic, quality-driven team to create exceptional sites on the web.
-        </p>
+
+      <section class="section section__about" id="about"> <!-- section -->
+        <h3><span>01. About Me</span></h3>
+        <div class="section__about-content"> <!-- about__content -->
+          <div class="section__about-content--left">
+            <p>
+              Full-Stack Web Developer with a desire to utilise my professional experience, background, and new web development skills as a Multimedia Programmer in the Arts. Recently earned a certificate for Full-Stack Web Development from Monash University with skills in JavaScript, HTML, CSS and Node.js.
+              <br />
+              <br />
+              My passion for music led me to develop a strong background in delivering technical skills and problem-solving as part of a team in a high-pressure live event environment as a Sound Engineer. These abilities combine well with the education to deliver exceptional client-focussed results.
+              <br />
+              <br />
+              Engaging the end-user with a balance of clear, focussed design and well implemented data are my aims for each project. I worked as a team of four to deliver a recipe search solution that provides ten recipe and three wine pairing suggestions based on any user-entered ingredient or taste keywords. I am excited to apply my skills as part of a dynamic, quality-driven team to create exceptional sites on the web.
+            </p>
+          </div>
+          <div class="section__about-content--right">
+            <img src="./images/blake-stickland-portfolio-headshot.jpg" alt="headshot of Blake Stickland">
+          </div>
+        </div>
       </section>
       <section class="section section__tech-stack" id="tech_stack">
-        <h2><span>02. Tech_Stack</span></h2>
+        <h3><span>02. Tech_Stack</span></h3>
         <p>Some of the technologies I have worked with:</p>
         <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>SCSS</li>
-          <li>SASS</li>
-          <li>JavaScript</li>
-          <li>MySQL</li>
-          <li>MongoDB</li>
-          <li>Mongoose</li>
-          <li>Express</li>
-          <li>React</li>
-          <li>NodeJS</li>
-          <li>Handlebars</li>
-          <li>Bootstrap</li>
-          <li>Materialize</li>
-          <li>Heroku</li>
-          <li>AJAX</li>
-          <li>Travis</li>
-          <li>Postman</li>
+          <li><i class="fab fa-html5 fa-2x"></i></li>
+          <li><i class="fab fa-css3 fa-2x"></i></li>
+          <li><i class="fab fa-sass fa-2x"></i></li>
+          <li><i class="fab fa-js-square fa-2x"></i></li>
+          <li>
+            <i class="fab fa-java fa-3x"></i>
+          </li>
+          <li><i class="fas fa-database fa-2x"></i><p>SQL</p></li>
+          <li><i class="fas fa-table"></i><p>MySQL</p><p>Workbench</p></li>
+          <li><i class="fas fa-database fa-2x"></i><p>MongoDB</p></li>
+          <li><i class="fas fa-link fa-2x"></i><p>mongoose</p></li>
+          <li><i class="fas fa-database fa-2x"></i><p>Firebase</p></li>
+          <li><i class="fas fa-link fa-2x"></i><p>Express</p></li>
+          <li><i class="fab fa-react fa-2x"></i><p>React</p></li>
+          <li><i class="fab fa-node fa-3x"></i></li>
+          <li><i class="fas fa-bicycle fa-2x"></i><p>Handlebars</p></li>
+          <li><i class="fab fa-bootstrap fa-2x"></i></li>
+          <li><i class="fas fa-h-square fa-2x"></i><p>Heroku</p></li>
+          <li><i class="fas fa-link fa-2x"></i><p>AJAX</p></li>
+          <li><i class="fas fa-seedling fa-2x"></i><p>Spring</p></li>
+          <li><i class="fas fa-mail-bulk fa-2x"></i><p>Postman</p></li>
         </ul>
         
       </section>
-      <section class="section section__projects" id="projects">
-          <span><h2>03. Projects</h2></span>
-        <!-- Use a grid to display the projects with one project per card -->
-        <div class="project-gallery">
-          <div class="card">
-            <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
-            <h4>Project Title</h4>
-            <p>Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="tech-stack-text">
-              <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>NodeJS</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
-            <h4>Project Title</h4>
-            <p>Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="tech-stack-text">
-              <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>NodeJS</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
-            <h4>Project Title</h4>
-            <p>Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="tech-stack-text">
-              <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>NodeJS</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
-            <h4>Project Title</h4>
-            <p>Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="tech-stack-text">
-              <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>NodeJS</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
-            <h4>Project Title</h4>
-            <p>Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="tech-stack-text">
-              <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>NodeJS</li>
-              </ul>
-            </div>
-          </div>
-          <div class="card">
-            <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
-            <h4>Project Title</h4>
-            <p>Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="tech-stack-text">
-              <ul>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>React</li>
-                <li>NodeJS</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    
-      </section>
-      <section class="section section__contact" id="contact">
-        <h3><span>04. Contact</span></h3>
-        <h2>Get In Touch</h2>
-        <!-- Use a form to be able to send emails from within the page. -->
-        <!-- Be sure to use form validation. -->
-        <form class="form" action="https://formspree.io/f/mnqllryw" method="POST">
-    
-          <label for="full-name">Full Name:</label>
-          <input type="text" name="full-name" id="full-name" placeholder="Full name" required />
-    
-          <br />
-    
-    
-          <label class="form__label" for="email">Email:</label>
-          <input class="form__input" type="email" name="email" placeholder="email address" required />
-    
-          <br />
-                
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" cols="30" rows="2" placeholder="Please type your message here." required></textarea>
-    
-          <br />
-    
-          <input type="submit" name="" id="" />
-    
-          <!-- <button class="button">Submit</button> -->
-          <!-- <button class="button button--secondary">Clear</button> -->
-        </form>
-    
-      </section>
-      <section></section>
-    </div>
 
-    <div class="sidebar-right">
-      <div class="sidebar-right--rotateCW90">
-        Email: blakestickland@gmail.com
+      <!-- section -->
+      <section class="section section__projects" id="projects">
+        <!-- h2 section heading -->
+        <span><h3>03. Projects</h3></span>
+        <!-- ul of projects -->
+        <ul class="project-gallery">
+          <!-- li for each project -->
+          <li class="project-content">
+              <!-- p -- recent project  -->
+              <span><p>Recent project</p></span>
+              <!-- h3 project-title -->
+              <h4 class="project-content__heading">Project Title</h4>
+              <!-- div project description -->
+              <p class="project-content__description">Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <!-- ul project tech list -->
+              <ul class="project-content__tech-stack-list">
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">MongoDB</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">Express</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">React</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">NodeJS</li>
+                <li class="project-content__tech-stack-list__item">Heroku</li>
+              </ul>
+              <!-- project links; one for deployed site; one for github repo -->
+              <div class="project-links">
+                <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
+              </div>
+              <!-- project image as background -->
+            </li>
+          <!-- li for each project -->
+          <li class="project-content">
+              <!-- p -- recent project  -->
+              <span><p>Recent project</p></span>
+              <!-- h3 project-title -->
+              <h4 class="project-content__heading">Project Title</h4>
+              <!-- div project description -->
+              <p class="project-content__description">Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <!-- ul project tech list -->
+              <ul class="project-content__tech-stack-list">
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">MongoDB</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">Express</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">React</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">NodeJS</li>
+                <li class="project-content__tech-stack-list__item">Heroku</li>
+              </ul>
+              <!-- project links; one for deployed site; one for github repo -->
+              <div class="project-links">
+                <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
+              </div>
+              <!-- project image as background -->
+            </li>
+          <!-- li for each project -->
+          <li class="project-content">
+              <!-- p -- recent project  -->
+              <span><p>Recent project</p></span>
+              <!-- h3 project-title -->
+              <h4 class="project-content__heading">Project Title</h4>
+              <!-- div project description -->
+              <p class="project-content__description">Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <!-- ul project tech list -->
+              <ul class="project-content__tech-stack-list">
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">MongoDB</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">Express</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">React</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">NodeJS</li>
+                <li class="project-content__tech-stack-list__item">Heroku</li>
+              </ul>
+              <!-- project links; one for deployed site; one for github repo -->
+              <div class="project-links">
+                <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
+              </div>
+              <!-- project image as background -->
+            </li>
+          <!-- li for each project -->
+          <li class="project-content">
+              <!-- p -- recent project  -->
+              <span><p>Recent project</p></span>
+              <!-- h3 project-title -->
+              <h4 class="project-content__heading">Project Title</h4>
+              <!-- div project description -->
+              <p class="project-content__description">Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <!-- ul project tech list -->
+              <ul class="project-content__tech-stack-list">
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">MongoDB</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">Express</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">React</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">NodeJS</li>
+                <li class="project-content__tech-stack-list__item">Heroku</li>
+              </ul>
+              <!-- project links; one for deployed site; one for github repo -->
+              <div class="project-links">
+                <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
+              </div>
+              <!-- project image as background -->
+            </li>
+          <!-- li for each project -->
+          <li class="project-content">
+              <!-- p -- recent project  -->
+              <span><p>Recent project</p></span>
+              <!-- h3 project-title -->
+              <h4 class="project-content__heading">Project Title</h4>
+              <!-- div project description -->
+              <p class="project-content__description">Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <!-- ul project tech list -->
+              <ul class="project-content__tech-stack-list">
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">MongoDB</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">Express</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">React</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">NodeJS</li>
+                <li class="project-content__tech-stack-list__item">Heroku</li>
+              </ul>
+              <!-- project links; one for deployed site; one for github repo -->
+              <div class="project-links">
+                <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
+              </div>
+              <!-- project image as background -->
+            </li>
+          <!-- li for each project -->
+          <li class="project-content">
+              <!-- p -- recent project  -->
+              <span><p>Recent project</p></span>
+              <!-- h3 project-title -->
+              <h4 class="project-content__heading">Project Title</h4>
+              <!-- div project description -->
+              <p class="project-content__description">Project description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <!-- ul project tech list -->
+              <ul class="project-content__tech-stack-list">
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">MongoDB</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">Express</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">React</li>
+                <!-- li for each tech used -->
+                <li class="project-content__tech-stack-list__item">NodeJS</li>
+                <li class="project-content__tech-stack-list__item">Heroku</li>
+              </ul>
+              <!-- project links; one for deployed site; one for github repo -->
+              <div class="project-links">
+                <!-- Insert icon here for project--> <!-- Put anchors for Github and link to deployed site icons here -->
+              </div>
+              <!-- project image as background -->
+            </li>
+
+          </ul>
+        </section>
+        <section class="section section__contact" id="contact">
+          <h3><span>04. Contact</span></h3>
+          <div class="section__contact__content">
+            <h2>Get In Touch!</h2>
+            <!-- Use a form to be able to send emails from within the page. -->
+            <!-- Be sure to use form validation. -->
+            <p>Feel free to contact me via email regarding any new opportunities. Or feel free to just say hi.</p>
+            <a class="section__contact__content__email-link" href="mailto:blakestickland@gmail.com" rel="noopener noreferrer" target="_blank">Say Hello</a>
+          </div>
+        </section>
       </div>
-    </div>
-  </main>
-</body>
+
+      <div class="sidebar sidebar--right">
+        <div class="sidebar__email">
+          <a href="mailto:blakestickland@gmail.com" rel="noopener noreferrer" target="_blank"><p>Email: blakestickland@gmail.com</p></a>
+          <!-- <a href="mailto:blakestickland@gmail.com" rel="noopener noreferrer" target="_blank">
+            <i class="fa fa-envelope fa-2x sidebar--left__icon" style="color:#DDDDDD;"></i>
+          </a> -->
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Email: blakestickland@gmail.com</p>
+      <p class="copyright">Blake Stickland © 2021</p>
+      <div class="footer__icons">
+        <a href="https://linkedin.com/in/blake-stickland" target="_blank">
+          <i class="fab fa-linkedin" style="color:#DDDDDD;"></i>
+        </a>
+        <a href="https://github.com/blakestickland" target="_blank">
+          <i class="fab fa-github-square" style="color:#DDDDDD;"></i>
+        </a>
+        <a href="mailto:blakestickland@gmail.com" rel="noopener noreferrer" target="_blank">
+          <i class="fa fa-envelope" style="color:#DDDDDD;"></i>
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
