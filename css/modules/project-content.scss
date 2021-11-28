@@ -2,26 +2,16 @@
 @use "../partials/typography";
 @use "../partials/spacing";
 
-// #projects {
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   width: 84%;
-// }
-
 .project-content {
   width: 31%;
   display: flex;
   flex-direction: column;
-  // max-width: 234px;
   min-height: fit-content;
   border: 1px solid rgb(252, 252, 252);
   border-radius: 7px;
   margin: 0;
   padding: spacing.$project-card-padding;
   margin: spacing.$project-card-margin;
-  // background-color: palevioletred;
 
   &__heading {
     font-size: typography.$tertiary-font-size;
@@ -30,7 +20,6 @@
   
   &__description {
     padding: spacing.$project-card-contents-padding;
-    // background-color: pink;
   }
   
   &__tech-stack-list {
@@ -63,44 +52,26 @@
     padding: 8px;
     width: 100%;
     max-width: 390px;
-    // background-color: royalblue;
-
     font-size: typography.$phone-font-size;
   }
 }
 
 @include devices.tablet {
-  // grid-template-columns: repeat(2, 1fr);
-
   .project-content {
     width: 100%;
-
-    // background-color: brown;
   }
 }
 
 @include devices.landscape-tablet {
-  // grid-template-columns: repeat(2, 1fr);
-
   .project-content {
-    width: 33vw;  // this means 40% of the view width
+    width: 33vw;
     max-width: 350px;
-
-    // background-color: chocolate;
   }
 }
 
 @include devices.laptop {
-  // grid-template-columns: repeat(3, 1fr);
-
   .project-content {
-    width: 40%;  // this means 27% of the view width
+    width: 40vw;
 
-    // background-color: cornflowerblue;
   }
-}
-
-.tech-stack-text {
-  // background-color: rosybrown;
-  
 }
