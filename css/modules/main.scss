@@ -26,10 +26,6 @@
   max-width: 926px;
 
   padding: 0 25px;
-  
-  @include devices.phone {
-    // width: 100vw;
-  }
 }
 
 .section {
@@ -45,15 +41,6 @@
   p {
       line-height: 1.5rem;
     }
-
-  // h1, h2, p, button, ul {
-  //   margin: 2rem;
-  // }
-
-  @include devices.phone {
-    // padding: 1rem;
-    // width: 100%;
-  }
 
   &__topDivPush {
       height: 10vh;
@@ -135,6 +122,22 @@
     li {
       padding: 15px 30px;
       text-align: center;
+    }
+  }
+
+  &__projects {
+    &__project-links {
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding: 0 10px;
+
+      a:hover {
+        border:none;
+        i {
+          color: palette.$standout-font-color;
+        }
+      }
     }
   }
 
@@ -224,12 +227,7 @@
   }
 
   @include devices.phone {
-    // grid-template-columns: 1fr;
     display: none;
     
-  }
-  
-  @include devices.tablet {
-    // grid-template-columns: repeat(2, 1fr);
   }
 }
