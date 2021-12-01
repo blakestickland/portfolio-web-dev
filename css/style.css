@@ -153,14 +153,6 @@ a:focus {
   display: flex;
   flex-direction: row;
 }
-.section__about-content img {
-  width: 70%;
-  margin: 0 30px;
-  filter: sepia();
-  border-radius: 3px;
-  outline: 1px solid #D6D6D6;
-  outline-offset: 7px;
-}
 .section__about-content--left {
   width: 50%;
 }
@@ -172,8 +164,17 @@ a:focus {
 .section__about-content--right {
   width: 50%;
 }
+.section__about-content--right__imgbox {
+  padding: 30px 30px 0 0;
+}
+.section__about-content--right__imgbox img {
+  width: 70%;
+  margin: 0 60px;
+  filter: sepia();
+  box-shadow: 30px 30px 0 #d00000;
+}
 @media only screen and (max-width: 576px) {
-  .section__about-content {
+  .section__about-content--right__imgbox {
     width: 100%;
   }
 }
